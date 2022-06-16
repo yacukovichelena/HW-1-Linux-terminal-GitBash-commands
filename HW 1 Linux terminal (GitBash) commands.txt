@@ -1,0 +1,108 @@
+Яцукович Елена 30 группа
+
+1) Посмотреть где я
+   pwd
+
+2) Создать папку
+   mkdir qa_1
+
+3) Зайти в папку
+   cd qa_1
+
+4) Создать 3 папки
+   mkdir qa_2 qa_3 qa_4
+
+5)Зайти в любую папку
+   cd qa_1
+
+6) Создать 5 файлов (3 txt, 2 json)
+   cat >> qq.txt
+   cat >> aa.txt
+   cat >> zz.txt
+   cat >> qwe.json
+   cat >> ff.json
+или
+touch qq.txt aa.txt zz.txt qwe.json ff.json
+
+7) Создать 3 папки
+   mkdir qa_5 qa_6 qa_7
+
+8) Вывести список содержимого папки
+   ls -la
+ 
+9) + Открыть любой  txt файл
+   vim qa_1.txt
+
+10) + Написать туда
+    нажимаем I  и открывается режим редактирования
+
+11) + сохранить и выйти.
+    Esc пишем :wq и нажимаем Enter
+
+12) Выйти из папки на уровень выше
+    cd ../
+—
+13) переместить любые 2 файла, которые вы создали, в любую другую папку.
+    mv qa_1/qq.txt qa_2/qq.txt
+    mv qa_1/aa.txt qa_2/aa.txt
+
+14) скопировать любые 2 файла, которые вы создали, в любую другую папку.
+    cp qa_1/qwe.json qa_2/qwe.json
+    cp qa_1/ff.json qa_2/ff.json
+
+15) Найти файл по имени
+    find . -iname "aa.txt"
+
+16) просмотреть содержимое в реальном времени (команда grep) изучите как она работает.
+    tail -f aa.txt
+
+17) вывести несколько первых строк из текстового файла
+    head -3 qa_3.txt
+
+18) вывести несколько последних строк из текстового файла
+    tail -f aa.txt
+
+19) просмотреть содержимое длинного файла (команда less) изучите как она работает.
+    cat qa_1.txt
+
+20) вывести дату и время
+    Date
+=========
+
+Задание *
+1) Отправить http запрос на сервер.
+http://162.55.220.72:5005/terminal-hw-request
+   curl -x POST http://162.55.220.72:5005/terminal-hw-request
+
+2) Написать скрипт который выполнит автоматически пункты 3, 4, 5, 6, 7, 8, 13
+    #!/bin/bush
+    touch d:/myscript
+    cat >> d://myscript
+    #!/bin/bash
+    # go to folder
+    cd HW 1
+    #create three folders
+    mkdir a b c
+    # do to any folder
+    cd qa_1
+    #create five files(3 txt, 2 json)
+    touch aa.txt qq.txt zz.txt ff.json qwe.json
+    #create three folders
+    mkdir qa_8 qa_9 qa_11
+    # list the contents of a folder
+    ls -la
+    #move any two files to any other folder
+    cd ../
+    mv qa_2/ff.json qa_3/ff.json
+    mv qa_2/zz.txt qa_3/zz.txt
+    Enter
+    Ctrl+C
+    cd ../
+    chmod +x filename
+    ./myscript
+
+
+=====================
+1) Посмотреть где я - pwd
+2) Создать папку - mkdir foldername
+3) Зайти в папку - cd foldername
